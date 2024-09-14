@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Hub /products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(#fff, #ffd6d6);
+        }
+
+        .header {
+            background: radial-gradient(#fff, #ffd6d6);
+            padding: 20px;
+            text-align: center;
+            color: rgb(100, 61, 61);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background: radial-gradient(#c78888, #e46464);
+            padding: 15px;
+            margin-bottom: 20px; /* Add margin to create space between navigation and content */
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px; /* Add padding to the navigation links */
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            min-height: 600px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* Enhance styling for the product cards */
+        .product-card {
+            padding: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            flex: 1; /* Take up remaining space */
+            height: 0; /* Ensure the aspect ratio is maintained */
+            border-radius: 5px 5px 0 0;
+            object-fit: cover;
+        }
+
+        .product-details {
+            flex: 1; /* Take up remaining space */
+        }
+
+        .buy-now-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .buy-now-btn:hover {
+            background-color: #45a049;
+        }
+
+        .reviews {
+            margin-top: 10px;
+        }
+
+        .review {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to our Shopping Hub</h1>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="About.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="main">
+       
+        <!-- Product cards with enhanced styling for card view -->
+        <div class="product-card">
+            <img src="img10.jpg" alt="Shirts" class="product-image">
+            <div class="product-details">
+                <h3>Half Printed Shirts</h3>
+                <p>Price: $100</p>
+                <a href="#" class="buy-now-btn">Buy Now</a>
+                <div class="reviews">
+                    <div class="review">
+                        <strong>John Doe:</strong> Excellent product! Highly recommended.
+                    </div>
+                    <!-- Add more reviews if needed -->
+                </div>
+            </div>
+        </div>
+        <!-- Product cards with enhanced styling for card view -->
+        <div class="product-card">
+            <img src="shoes11.jpg" alt="Shirts" class="product-image">
+            <div class="product-details">
+                <h3>Campus Sports Shoes</h3>
+                <p>Price: $100</p>
+                <a href="#" class="buy-now-btn">Buy Now</a>
+                <div class="reviews">
+                    <div class="review">
+                        <strong>John Doe:</strong> Excellent product! Highly recommended.
+                    </div>
+                    <!-- Add more reviews if needed -->
+                </div>
+            </div>
+        </div> 
+
+        <!-- Product cards with enhanced styling for card view -->
+        <div class="product-card">
+            <img src="img16.jpg" alt="Shirts" class="product-image">
+            <div class="product-details">
+                <h3>Handed Painted Scorpio Vintage jacket</h3>
+                <p>Price: $100</p>
+                <a href="#" class="buy-now-btn">Buy Now</a>
+                <div class="reviews">
+                    <div class="review">
+                        <strong>John Doe:</strong> Excellent product! Highly recommended.
+                    </div>
+                    <!-- Add more reviews if needed -->
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img17.jpg" alt="shirts 2" class="product-image">
+            <div class="product-details">
+                <h3>Fridja Mens Printed Stripe Casual Lapel Short Sleeve Shirts</h3>
+                <p>Price: $200</p>
+                <a href="#" class="buy-now-btn">Buy Now</a>
+                <div class="reviews">
+                    <div class="review">
+                        <strong>Jane Smith:</strong> Beautiful watch! Fast shipping.
+                    </div>
+                    <!-- Add more reviews if needed -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat the above product card structure for additional products -->
+
+        <!-- Example of adding more product cards (you need to add 17 more) -->
+        <div class="product-card">
+            <img src="coorder.jpg" alt="Clothes 1" class="product-image">
+            <div class="product-details">
+                <h3>Kizyoo Men's Soft Poly Lycra Digital Prined Shirts with Pajama Shorts Night Suit Set</h3>
+                <p>Price: $50</p>
+                <a href="#" class="buy-now-btn">Buy Now</a>
+                <div class="reviews">
+                    <div class="review">
+                        <strong>Alice Johnson:</strong> Comfortable and stylish!
+                    </div>
+                    <!-- Add more reviews if needed -->
+                </div>
+                
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="img 18.jpg" alt="shirts 2" class="product-image">
+            <div class="product-details">
+                <h3>Incerun Men Tropical Leaf Pattern  Floral Shirt</h3>
+                <p>Price: $200</p>
+                <a href="#" class="buy-now-btn">Buy Now</a>
+                <div class="reviews">
+                    <div class="review">
+                        <strong>Jane Smith:</strong> Beautiful watch! Fast shipping.
+                    </div>
+                    <!-- Add more reviews if needed -->
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="img 19.jpg" alt="shirts 2" class="product-image">
+            <div class="product-details">
+                <h3>Ikat Dresses Shirts Deep Green</h3>
+                <p>Price: $200</p>
+                <a href="#" class="buy-now-btn">Buy Now</a>
+                <div class="reviews">
+                    <div class="review">
+                        <strong>Jane Smith:</strong> Beautiful watch! Fast shipping.
+                    </div>
+                    <!-- Add more reviews if needed -->
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="img 21.jpg" alt="shirts 2" class="product-image">
+            <div class="product-details">
+                <h3>Fridja Mens Printed Stripe Casual Lapel Short Sleeve Shirts</h3>
+                <p>Price: $200</p>
+                <a href="#" class="buy-now-btn">Buy Now</a>
+                <div class="reviews">
+                    <div class="review">
+                        <strong>Jane Smith:</strong> Beautiful watch! Fast shipping.
+                    </div>
+                    <!-- Add more reviews if needed -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2024 All rights reserved</p>
+    </div>
+</body>
+</html>
